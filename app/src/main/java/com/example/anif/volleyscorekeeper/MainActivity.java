@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity
 {
     ImageButton firstTeamPlus, firstTeamMin, secondTeamPlus, secondTeamMin;
 
+    Button resetButton;
+
     TextView firstTeamScore, secondTeamScore, firstTeamServiceStatus, secondTeamServiceStatus;
 
     int score1 = 0,
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity
         secondTeamPlus = (ImageButton) findViewById(R.id.secondTeamScorePlus);
         secondTeamMin = (ImageButton) findViewById(R.id.secondTeamScoreMin);
 
+        resetButton = (Button) findViewById(R.id.resetButton);
+
         firstTeamScore = (TextView) findViewById(R.id.firstTeamScore);
         firstTeamServiceStatus = (TextView) findViewById(R.id.firstTeamServiceStatus);
         secondTeamScore = (TextView) findViewById(R.id.secondTeamScore);
@@ -43,6 +47,7 @@ public class MainActivity extends AppCompatActivity
                     score1 += 1;
                     firstTeamScore.setText(String.valueOf(score1));
                     firstTeamServiceStatus.setTypeface(null, Typeface.BOLD);
+
                     firstTeamServiceStatus.setTextSize(20);
                     secondTeamServiceStatus.setTypeface(null, Typeface.NORMAL);
                     secondTeamServiceStatus.setTextSize(16);
@@ -90,6 +95,22 @@ public class MainActivity extends AppCompatActivity
                     score2 -= 1;
                     secondTeamScore.setText(String.valueOf(score2));
                 }
+            }
+        });
+
+        resetButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                score1 = 0;
+                score2 = 0;
+                firstTeamScore.setText("0");
+                secondTeamScore.setText("0");
+                secondTeamServiceStatus.setTypeface(null, Typeface.NORMAL);
+                secondTeamServiceStatus.setTextSize(16);
+                firstTeamServiceStatus.setTypeface(null, Typeface.NORMAL);
+                firstTeamServiceStatus.setTextSize(16);
             }
         });
     }

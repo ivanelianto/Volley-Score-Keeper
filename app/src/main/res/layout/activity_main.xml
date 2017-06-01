@@ -1,135 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context="com.example.anif.volleyscorekeeper.MainActivity"
-    android:baselineAligned="false">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.anif.volleyscorekeeper.MainActivity">
 
-    <RelativeLayout
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:padding="16dp"
-        android:background="@color/colorRed">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
-        <TextView
-            android:id="@+id/firstTeamTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="@string/first_team_name"
-            android:textColor="@color/colorWhite"
-            android:textSize="32sp"
-            android:layout_alignParentTop="true"
-            android:paddingTop="24dp"
-            android:paddingBottom="24dp"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorRed">
 
-        <TextView
-            android:id="@+id/firstTeamServiceStatus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="Service"
-            android:textColor="@color/colorWhite"
-            android:textSize="16sp"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp"
-            android:layout_below="@id/firstTeamTextView"/>
+            <TextView
+                android:id="@+id/firstTeamTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/first_team_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="32sp"
+                android:layout_alignParentTop="true"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"/>
 
-        <TextView
-            android:id="@+id/firstTeamScore"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="0"
-            android:textColor="@color/colorWhite"
-            android:textSize="48sp"
-            android:paddingTop="24dp"
-            android:paddingBottom="24dp"
-            android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/firstTeamServiceStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Service"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_below="@id/firstTeamTextView"/>
 
-        <ImageButton
-            android:id="@+id/firstTeamScorePlus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_expand_less_black_24dp"
-            android:background="@null"
-            android:padding="12dp"
-            android:layout_above="@id/firstTeamScore" />
+            <TextView
+                android:id="@+id/firstTeamScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"
+                android:layout_centerInParent="true"/>
 
-        <ImageButton
-            android:id="@+id/firstTeamScoreMin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_expand_more_black_24dp"
-            android:background="@null"
-            android:padding="12dp"
-            android:layout_below="@id/firstTeamScore"/>
-    </RelativeLayout>
+            <ImageButton
+                android:id="@+id/firstTeamScorePlus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expand_less_black_24dp"
+                android:background="@null"
+                android:padding="12dp"
+                android:layout_above="@id/firstTeamScore" />
 
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:padding="16dp"
-        android:background="@color/colorIndigo">
+            <ImageButton
+                android:id="@+id/firstTeamScoreMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expand_more_black_24dp"
+                android:background="@null"
+                android:padding="12dp"
+                android:layout_below="@id/firstTeamScore"/>
+        </RelativeLayout>
 
-        <TextView
-            android:id="@+id/secondTeamTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="@string/second_team_name"
-            android:textColor="@color/colorWhite"
-            android:textSize="32sp"
-            android:layout_alignParentTop="true"
-            android:paddingTop="24dp"
-            android:paddingBottom="24dp"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorIndigo">
 
-        <TextView
-            android:id="@+id/secondTeamServiceStatus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="Service"
-            android:textColor="@color/colorWhite"
-            android:textSize="16sp"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp"
-            android:layout_below="@id/secondTeamTextView"/>
+            <TextView
+                android:id="@+id/secondTeamTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/second_team_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="32sp"
+                android:layout_alignParentTop="true"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"/>
 
-        <TextView
-            android:id="@+id/secondTeamScore"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="0"
-            android:textColor="@color/colorWhite"
-            android:textSize="48sp"
-            android:paddingTop="24dp"
-            android:paddingBottom="24dp"
-            android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/secondTeamServiceStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Service"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_below="@id/secondTeamTextView"/>
 
-        <ImageButton
-            android:id="@+id/secondTeamScorePlus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_expand_less_black_24dp"
-            android:background="@null"
-            android:padding="12dp"
-            android:layout_above="@id/secondTeamScore"
-            android:elevation="2dp"/>
+            <TextView
+                android:id="@+id/secondTeamScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/colorWhite"
+                android:textSize="48sp"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"
+                android:layout_centerInParent="true"/>
 
-        <ImageButton
-            android:id="@+id/secondTeamScoreMin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_expand_more_black_24dp"
-            android:background="@null"
-            android:padding="12dp"
-            android:layout_below="@id/secondTeamScore"/>
-    </RelativeLayout>
-</LinearLayout>
+            <ImageButton
+                android:id="@+id/secondTeamScorePlus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expand_less_black_24dp"
+                android:background="@null"
+                android:padding="12dp"
+                android:layout_above="@id/secondTeamScore"
+                android:elevation="2dp"/>
+
+            <ImageButton
+                android:id="@+id/secondTeamScoreMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_expand_more_black_24dp"
+                android:background="@null"
+                android:padding="12dp"
+                android:layout_below="@id/secondTeamScore"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="32dp"
+        android:text="RESET"
+        android:textSize="24sp"
+        android:background="#EEEEEE"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"/>
+</android.support.design.widget.CoordinatorLayout>
