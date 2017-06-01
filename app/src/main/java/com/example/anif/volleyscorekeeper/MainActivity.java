@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                if (score1 < 25)
+                if (score1 < 50)
                 {
                     score1 += 1;
                     firstTeamScore.setText(String.valueOf(score1));
@@ -54,6 +54,32 @@ public class MainActivity extends AppCompatActivity
                 {
                     score1 -= 1;
                     firstTeamScore.setText(String.valueOf(score1));
+                }
+            }
+        });
+
+        secondTeamPlus.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                if (score2 < 50)
+                {
+                    score2 += 1;
+                    secondTeamScore.setText(String.valueOf(score2));
+                }
+            }
+        });
+
+        secondTeamMin.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                if (score2 > 0)
+                {
+                    score2 -= 1;
+                    secondTeamScore.setText(String.valueOf(score2));
                 }
             }
         });
