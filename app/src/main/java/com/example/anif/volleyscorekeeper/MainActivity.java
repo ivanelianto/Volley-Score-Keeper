@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                if (score1 >= 0)
+                if (score1 > 0)
                 {
                     score1 -= 1;
                     firstTeamScore.setText(String.valueOf(score1));
