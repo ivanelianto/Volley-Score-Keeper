@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Volley Score Keeper</string>
+    <string name="first_team_name">Tim A</string>
+    <string name="second_team_name">Tim B</string>
+</resources>
