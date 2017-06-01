@@ -1,5 +1,6 @@
 package com.example.anif.volleyscorekeeper;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -41,6 +42,10 @@ public class MainActivity extends AppCompatActivity
                 {
                     score1 += 1;
                     firstTeamScore.setText(String.valueOf(score1));
+                    firstTeamServiceStatus.setTypeface(null, Typeface.BOLD);
+                    firstTeamServiceStatus.setTextSize(20);
+                    secondTeamServiceStatus.setTypeface(null, Typeface.NORMAL);
+                    secondTeamServiceStatus.setTextSize(16);
                 }
             }
         });
@@ -67,6 +72,10 @@ public class MainActivity extends AppCompatActivity
                 {
                     score2 += 1;
                     secondTeamScore.setText(String.valueOf(score2));
+                    secondTeamServiceStatus.setTypeface(null, Typeface.BOLD);
+                    secondTeamServiceStatus.setTextSize(20);
+                    firstTeamServiceStatus.setTypeface(null, Typeface.NORMAL);
+                    firstTeamServiceStatus.setTextSize(16);
                 }
             }
         });
